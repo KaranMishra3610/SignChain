@@ -81,26 +81,27 @@ This approach is:
 - Full transparency with smart contract enforcement
 
 ## Local Setup
-git clone https://github.com/KaranMishra3610/SignChain
-cd SignChain
+-git clone https://github.com/KaranMishra3610/SignChain
+-cd SignChain
 
-Start Frontend
-cd client
-npm install
-npm run dev
+## Start Frontend
+- cd client
+- npm install
+- npm run dev
 
-Start Backend (in a separate terminal)
-cd ../backend
-npm install
-node server.js
-Start MongoDB
-Ensure MongoDB is running locally (default port: 27017).
+## Start Backend (in a separate terminal)
+- cd ../backend
+- npm install
+- node server.js
 
-Deploy Smart Contract on Local Hardhat Network (with 20 Test Accounts)
-cd ../contracts
-npm install
-npx hardhat node
-This starts a local Ethereum testnet with 20 unlocked, pre-funded test accounts.
+## Start MongoDB
+- Ensure MongoDB is running locally (default port: 27017).
 
-In a new terminal, deploy the smart contract:
-npx hardhat run scripts/deploy.js --network localhost
+## Deploy Smart Contract on Local Hardhat Network (with 20 Test Accounts)
+- cd ../contracts
+- npm install
+- npx hardhat node
+- This starts a local Ethereum testnet with 20 unlocked, pre-funded test accounts.
+
+## In a new terminal, deploy the smart contract:
+- npx hardhat run scripts/deploy.js --network localhost
